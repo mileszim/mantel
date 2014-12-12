@@ -1,59 +1,26 @@
-# Fireplace
+# Mantel
 
-Fireplace is an [Ember.js](http://emberjs.com) addon for [Firebase](http://firebase.com).
+Mantel is an [ember-data](http://emberjs.com/api/data/) adapter for [Firebase](http://firebase.com) based on [Fireplace](https://github.com/rlivsey/mantel)
 
-[![Build Status](https://travis-ci.org/rlivsey/fireplace.svg?branch=master)](https://travis-ci.org/rlivsey/fireplace)
+[![Build Status](https://travis-ci.org/mileszim/mantel.svg?branch=master)](https://travis-ci.org/mileszim/mantel)
 
 ## Installation
 
 Install as an Ember CLI addon:
 
 ```
-npm install --save-dev fireplace
+npm install --save-dev mantel
 ```
 
 Then run the generator to install dependencies (Firebase from Bower):
 
 ```
-ember generate fireplace
+ember generate mantel
 ```
 
 ## Quick Example
 
-```javascript
-// app/models/person.js
-import {Model, attr, hasOne, hasMany} from 'fireplace';
 
-export default Model.extend({
-  firstName: attr(),
-  lastName: attr(),
-  age: attr("number"),
-  avatar: hasOne()  
-});
-```
-
-```javascript
-// app/routes/people.js
-import Ember from 'ember';
-export default Ember.Route.extend({
-  model: function() {
-    // list all people
-    return this.store.fetch("person");
-  }
-});
-```
-
-```javascript
-// app/routes/person.js
-import Ember from 'ember';
-export default Ember.Route.extend({
-  model: function(params) {
-    return this.store.fetch("person", params.person_id);
-  }
-});
-```
-
-See the [documentation](http://livsey.org/fireplace) for more details.
 
 ### Development
 
