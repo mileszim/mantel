@@ -1,2 +1,2 @@
-import Transform from 'fireplace/transforms/timestamp';
-export default Transform;
+import TimestampTransform from 'mantel/transforms/timestamp';
+export default TimestampTransform;

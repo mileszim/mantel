@@ -1,2 +1,2 @@
-import Transform from 'fireplace/transforms/hash';
-export default Transform;
+import HashTransform from 'mantel/transforms/hash';
+export default HashTransform;
