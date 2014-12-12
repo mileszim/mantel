@@ -1,6 +1,7 @@
-import Transform from './base';
+import DS from 'ember-data';
 
-export default Transform.extend({
+
+export default DS.Transform.extend({
   serialize: function(hash, options, container) {
     return transformHash("serialize", hash, options, container);
   },

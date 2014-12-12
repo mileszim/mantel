@@ -38,7 +38,7 @@
     "express": "^4.8.5",
     "glob": "^4.0.5"
   },
-  "description": "Firebase adapter for ember-data.",
+  "description": "Firebase adapter for ember-data, based on Fireplace.",
   "keywords": [
     "ember-addon",
     "firebase"

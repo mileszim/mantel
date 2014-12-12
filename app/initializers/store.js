@@ -1,5 +1,5 @@
 export default {
-  name: 'fireplace:inject-store',
+  name: 'mantel:inject-store',
 
   initialize: function(container, application) {
     application.inject('controller',   'store', 'store:main');

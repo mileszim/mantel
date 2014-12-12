@@ -1,12 +1,8 @@
+import DS from "ember-data";
 /* global Firebase */
 
-import Transform from './base';
 
-export function now() {
-  return Firebase.ServerValue.TIMESTAMP;
-}
-
-export default Transform.extend({
+export default DS.Transform.extend({
   deserialize: function(value) {
     if (!value) {
       return null;
@@ -24,3 +20,8 @@ export default Transform.extend({
     return value.getTime();
   }
 });
+
+
+export function now() {
+  return Firebase.ServerValue.TIMESTAMP;
+}

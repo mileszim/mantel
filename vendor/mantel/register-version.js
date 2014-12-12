@@ -1,0 +1,1 @@
+Ember.libraries.register('Mantel', '0.0.0');
